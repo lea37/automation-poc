@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run transform-tokens",
-    "transform-tokens": "node ./transformTokens.js",
-    "build": "style-dictionary build"
+    "transform-tokens": "node ./transformTokens.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "style-dictionary": "^3.7.1"
+  }
 }
