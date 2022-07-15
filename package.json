@@ -6,11 +6,15 @@
   "scripts": {
     "start": "npm run transform-tokens",
     "transform-tokens": "node ./transformTokens.js",
-    "build": "style-dictionary build"
+    "build": "style-dictionary build",
+    "sass:tokens": "npx json-to-scss tokens/tokens.json src/scss/settings/_tokens.scss"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "style-dictionary": "^3.7.1"
+  },
+  "dependencies": {
+    "json-to-scss": "^1.6.2"
   }
 }
